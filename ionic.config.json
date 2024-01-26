@@ -1,0 +1,7 @@
+{
+  "name": "MI ParaCon",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react-vite"
+}
