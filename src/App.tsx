@@ -59,11 +59,11 @@ const App: React.FC = () => (
           </Route>
         </IonRouterOutlet>
         <IonTabBar slot="bottom">
-          <IonTabButton tab="tab1" href="/home">
+          <IonTabButton tab="home" href="/home">
             <IonIcon aria-hidden="true" icon={home} />
             <IonLabel>Home</IonLabel>
           </IonTabButton>
-          <IonTabButton tab="tab2" href="/schedule">
+          <IonTabButton tab="schedule" href="/schedule">
             <IonIcon aria-hidden="true" icon={calendar} />
             <IonLabel>Schedule</IonLabel>
           </IonTabButton>

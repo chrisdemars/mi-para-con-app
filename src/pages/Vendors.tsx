@@ -4,13 +4,13 @@ import ExploreContainer from '../components/ExploreContainer';
 const Vendors: React.FC = () => {
   return (
     <IonPage>
-      <IonHeader>
+      {/* <IonHeader>
         <IonToolbar>
           <IonTitle>MI ParaCon</IonTitle>
         </IonToolbar>
-      </IonHeader>
+      </IonHeader> */}
       <IonContent fullscreen>
-        <IonHeader collapse="condense">
+        <IonHeader>
           <IonToolbar>
             <IonTitle size="large">MI ParaCon</IonTitle>
           </IonToolbar>
