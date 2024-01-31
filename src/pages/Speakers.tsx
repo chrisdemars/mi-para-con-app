@@ -1,5 +1,4 @@
 import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/react';
-import ExploreContainer from '../components/ExploreContainer';
 
 const Speakers: React.FC = () => {
   return (
@@ -10,7 +9,6 @@ const Speakers: React.FC = () => {
             <IonTitle size="large">MI ParaCon</IonTitle>
           </IonToolbar>
         </IonHeader>
-        <ExploreContainer name="Tab 3 page" />
       </IonContent>
     </IonPage>
   );
