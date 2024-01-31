@@ -4,11 +4,6 @@ import ExploreContainer from '../components/ExploreContainer';
 const Speakers: React.FC = () => {
   return (
     <IonPage>
-      {/* <IonHeader>
-        <IonToolbar>
-          <IonTitle>MI ParaCon</IonTitle>
-        </IonToolbar>
-      </IonHeader> */}
       <IonContent fullscreen>
         <IonHeader>
           <IonToolbar>

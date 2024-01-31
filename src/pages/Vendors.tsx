@@ -4,15 +4,10 @@ import ExploreContainer from '../components/ExploreContainer';
 const Vendors: React.FC = () => {
   return (
     <IonPage>
-      {/* <IonHeader>
-        <IonToolbar>
-          <IonTitle>MI ParaCon</IonTitle>
-        </IonToolbar>
-      </IonHeader> */}
       <IonContent fullscreen>
         <IonHeader>
           <IonToolbar>
-            <IonTitle size="large">MI ParaCon 2024</IonTitle>
+            <IonTitle size="large">MI ParaCon</IonTitle>
           </IonToolbar>
         </IonHeader>
         <ExploreContainer name="Vendors" />
