@@ -1,4 +1,5 @@
-import { IonContent, IonPage, IonCard, IonCardHeader, IonCardTitle, IonCardContent, IonImg } from '@ionic/react';
+import { IonContent, IonPage, IonCard, IonCardHeader, IonCardTitle, IonCardContent, IonImg, IonList, IonIcon, IonItem, IonLabel } from '@ionic/react';
+import { calendar, time, cash, people } from 'ionicons/icons';
 
 const Home: React.FC = () => {
   return (
@@ -21,11 +22,27 @@ const Home: React.FC = () => {
           <IonCardHeader>
             <IonCardTitle>VALLEY CAMP INVESTIGATION</IonCardTitle>
           </IonCardHeader>
-          <IonCardContent>Date: Thursday, Aug. 22, 2024
-            Time: 8 p.m. – Midnight
-            Price: $120.00 each
-            Seating Capacity: 100
-
+          <IonCardContent>
+            <IonList>
+              <IonItem>
+                <IonIcon aria-hidden="true" icon={calendar} slot="start"></IonIcon>
+                <IonLabel>Date: Thursday, Aug. 22, 2024</IonLabel>
+              </IonItem>
+              <IonItem>
+                <IonIcon aria-hidden="true" icon={time} slot="start"></IonIcon>
+                <IonLabel>Time: 8 p.m. – Midnight</IonLabel>
+              </IonItem>
+              <IonItem>
+                <IonIcon aria-hidden="true" icon={cash} slot="start"></IonIcon>
+                <IonLabel>Price: $120.00 each</IonLabel>
+              </IonItem>
+              <IonItem>
+                <IonIcon aria-hidden="true" icon={people} slot="start"></IonIcon>
+                <IonLabel>Seating Capacity: 100</IonLabel>
+              </IonItem>
+            </IonList>
+          </IonCardContent>
+          <IonCardContent>
             We’re bringing back our ever popular Paranormal Investigation to the 106-year-old Museum Ship Valley Camp. Join paranormal celebs and experts on this investigation! This experience is limited to 100 people and the group will be broken into smaller investigation stations. Participants must provide their own transportation to the Valley Camp.</IonCardContent>
         </IonCard>
         <IonCard>
