@@ -12,7 +12,7 @@ const Vendors: React.FC = () => {
       <IonContent fullscreen>
         <IonHeader>
           <IonToolbar>
-            <IonTitle size="large">MI ParaCon</IonTitle>
+            <IonTitle size="large">MI ParaCon 2024</IonTitle>
           </IonToolbar>
         </IonHeader>
         <ExploreContainer name="Vendors" />
