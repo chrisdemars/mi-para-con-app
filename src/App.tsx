@@ -10,7 +10,7 @@ import {
   setupIonicReact
 } from '@ionic/react';
 import { IonReactRouter } from '@ionic/react-router';
-import { home, calendar, people, pricetags } from 'ionicons/icons';
+import { homeSharp, calendarSharp, peopleSharp, pricetagsSharp } from 'ionicons/icons';
 import Home from './pages/Home';
 import Schedule from './pages/Schedule';
 import Speakers from './pages/Speakers';
@@ -60,19 +60,19 @@ const App: React.FC = () => (
         </IonRouterOutlet>
         <IonTabBar slot="bottom">
           <IonTabButton tab="home" href="/home">
-            <IonIcon aria-hidden="true" icon={home} />
+            <IonIcon aria-hidden="true" icon={homeSharp} />
             <IonLabel>Home</IonLabel>
           </IonTabButton>
           <IonTabButton tab="schedule" href="/schedule">
-            <IonIcon aria-hidden="true" icon={calendar} />
+            <IonIcon aria-hidden="true" icon={calendarSharp} />
             <IonLabel>Schedule</IonLabel>
           </IonTabButton>
           <IonTabButton tab="speakers" href="/speakers">
-            <IonIcon aria-hidden="true" icon={people} />
+            <IonIcon aria-hidden="true" icon={peopleSharp} />
             <IonLabel>Speakers</IonLabel>
           </IonTabButton>
           <IonTabButton tab="vendors" href="/vendors">
-            <IonIcon aria-hidden="true" icon={pricetags} />
+            <IonIcon aria-hidden="true" icon={pricetagsSharp} />
             <IonLabel>Vendors</IonLabel>
           </IonTabButton>
         </IonTabBar>

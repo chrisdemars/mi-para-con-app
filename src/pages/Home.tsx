@@ -6,9 +6,9 @@ const Home: React.FC = () => {
     <IonPage>
       <IonContent fullscreen>
         <IonCard>
-          <IonImg alt="Silhouette of mountains" src="../public/hero-image.webp" ></IonImg>
+          <IonImg alt="Valley Camp with Michigan ParaCon logo on top." src="/hero-image@2x.jpg" ></IonImg>
           <IonCardHeader>
-            <IonCardTitle>👻 Welcome!</IonCardTitle>
+            <IonCardTitle>👻 Welcome</IonCardTitle>
             {/* <IonCardSubtitle>Michigan ParaCon</IonCardSubtitle> */}
           </IonCardHeader>
           <IonCardContent>The 2024 Michigan Paranormal Convention will bring the biggest names in the paranormal industry to Sault Ste. Marie, MI for the 14th time.</IonCardContent>
@@ -16,9 +16,9 @@ const Home: React.FC = () => {
             Between August 22 and 24, 2024 in Sault Ste. Marie's Kewadin Casino's DreamMakers Theater, experts and television stars will be on hand to cover such topics as paranormal investigating, psychic powers, demonology, and UFOlogy. Come see the biggest names speak on today's hottest topic, the paranormal!
           </IonCardContent>
         </IonCard>
-        <h1>👻 Special Events!</h1>
+        <h1>👻 Special Events</h1>
         <IonCard>
-          <IonImg alt="Silhouette of mountains" src="../public/valley-camp.webp"></IonImg>
+          <IonImg alt="Valley Camp Ship" src="/valley-camp@2x.jpg"></IonImg>
           <IonCardHeader>
             <IonCardTitle>VALLEY CAMP INVESTIGATION</IonCardTitle>
           </IonCardHeader>
@@ -47,7 +47,7 @@ const Home: React.FC = () => {
         </IonCard>
         <IonCard>
           <IonCardHeader>
-            <IonCardTitle>📋 Workshops!</IonCardTitle>
+            <IonCardTitle>📋 Workshops</IonCardTitle>
           </IonCardHeader>
           <IonCardContent>The 2024 Michigan Paranormal Convention will bring the biggest names in the paranormal industry to Sault Ste. Marie, MI for the 14th time.</IonCardContent>
           <IonCardContent>
