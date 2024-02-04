@@ -5,7 +5,7 @@ import { useEffect, useState } from 'react';
 const Speakers: React.FC = () => {
   const [speakers, setSpeakers] = useState([]);
   useEffect(() => {
-    fetch('http://localhost:1337/api/speakers')
+    const getData = fetch('http://localhost:1337/api/speakers')
       .then((res) => {
         return res.json();
       })
@@ -13,6 +13,8 @@ const Speakers: React.FC = () => {
         setSpeakers(data);
         console.log(data);
       });
+
+    getData;
   }, []);
 
   return (
