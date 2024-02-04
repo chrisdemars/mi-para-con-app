@@ -4,17 +4,15 @@ import { useEffect, useState } from 'react';
 
 const Speakers: React.FC = () => {
   const [speakers, setSpeakers] = useState([]);
-  useEffect(() => {
-    const getData = fetch('http://localhost:1337/api/speakers')
-      .then((res) => {
-        return res.json();
-      })
-      .then((data) => {
-        setSpeakers(data);
-        console.log(data);
-      });
 
-    getData;
+  const fetchSpeakers = async () => {
+    const response = await fetch('http://localhost:1337/api/speakers');
+    const data = await response.json();
+    setSpeakers(data);
+  }
+
+  useEffect(() => {
+    fetchSpeakers();
   }, []);
 
   return (
