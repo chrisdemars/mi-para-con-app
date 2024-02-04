@@ -8,8 +8,8 @@ const Speakers: React.FC = () => {
   const fetchSpeakers = async () => {
     const response = await fetch('http://localhost:1337/api/speakers');
     const data = await response.json();
-    setSpeakers(data);
-    console.log(data);
+    setSpeakers(data.data);
+    console.log(data.data);
   }
 
   useEffect(() => {
@@ -25,11 +25,11 @@ const Speakers: React.FC = () => {
           </IonToolbar>
         </IonHeader>
         {Array.isArray(speakers) && speakers.map((speaker: any) => (
-          <IonItem key={speaker.id}>
+          <IonItem key={speaker.attributes.id}>
             <IonAvatar slot="start">
-              <IonImg key={speaker.id} src={speaker.url} alt={speaker.title} />
+              <IonImg key={speaker.attributes.id} src={speaker.attributes.url} alt={speaker.attributes.title} />
             </IonAvatar>
-            <IonLabel>{speaker.name}</IonLabel>
+            <IonLabel>{speaker.attributes.Name}</IonLabel>
           </IonItem>
         ))}
       </IonContent>
