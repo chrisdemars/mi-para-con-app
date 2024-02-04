@@ -9,6 +9,7 @@ const Speakers: React.FC = () => {
     const response = await fetch('http://localhost:1337/api/speakers');
     const data = await response.json();
     setSpeakers(data);
+    console.log(data);
   }
 
   useEffect(() => {
