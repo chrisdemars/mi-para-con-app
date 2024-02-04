@@ -4,7 +4,8 @@
   "info": {
     "singularName": "speaker",
     "pluralName": "speakers",
-    "displayName": "Speakers"
+    "displayName": "Speakers",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -21,15 +22,15 @@
       "required": true
     },
     "Headshot": {
+      "type": "media",
+      "multiple": true,
+      "required": true,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": true,
-      "required": true
+      ]
     }
   }
 }

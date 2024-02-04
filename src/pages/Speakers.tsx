@@ -1,4 +1,4 @@
-import { IonAvatar, IonContent, IonHeader, IonItem, IonLabel, IonPage, IonTitle, IonToolbar } from '@ionic/react';
+import { IonAvatar, IonContent, IonHeader, IonImg, IonItem, IonLabel, IonPage, IonTitle, IonToolbar } from '@ionic/react';
 
 import { useEffect, useState } from 'react';
 
@@ -10,8 +10,8 @@ const Speakers: React.FC = () => {
         return res.json();
       })
       .then((data) => {
-        console.log(data);
         setSpeakers(data);
+        console.log(data);
       });
   }, []);
 
@@ -26,9 +26,9 @@ const Speakers: React.FC = () => {
         {Array.isArray(speakers) && speakers.map((speaker: any) => (
           <IonItem key={speaker.id}>
             <IonAvatar slot="start">
-              <img key={speaker.id} src={speaker.url} alt={speaker.title} />
+              <IonImg key={speaker.id} src={speaker.url} alt={speaker.title} />
             </IonAvatar>
-            <IonLabel>{speaker.Name}</IonLabel>
+            <IonLabel>{speaker.name}</IonLabel>
           </IonItem>
         ))}
       </IonContent>

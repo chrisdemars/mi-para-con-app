@@ -820,6 +820,7 @@ export interface ApiSpeakerSpeaker extends Schema.CollectionType {
     singularName: 'speaker';
     pluralName: 'speakers';
     displayName: 'Speakers';
+    description: '';
   };
   options: {
     draftAndPublish: true;
