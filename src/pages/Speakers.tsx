@@ -27,7 +27,8 @@ const Speakers: React.FC = () => {
         {Array.isArray(speakers) && speakers.map((speaker: any) => (
           <IonItem key={speaker.id}>
             <IonAvatar slot="start">
-              <IonImg src={speaker.attributes.Headshot.data.attributes.url} alt={speaker.attributes.Headshot.data.attributes.alternativeText} />
+              <IonImg src={`http://localhost:1337${speaker.attributes.Headshot?.data?.attributes?.url}`}
+                alt={speaker.attributes.Headshot.data.attributes.alternativeText} />
             </IonAvatar>
             <IonLabel>{speaker.attributes.Name}</IonLabel>
           </IonItem>
