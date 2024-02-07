@@ -6,7 +6,7 @@ const Speakers: React.FC = () => {
   const [speakers, setSpeakers] = useState([]);
 
   const fetchSpeakers = async () => {
-    const response = await fetch('http://localhost:1337/api/speakers');
+    const response = await fetch('http://localhost:1337/api/speakers?populate=*');
     const data = await response.json();
     setSpeakers(data.data);
     console.log(data.data);
@@ -25,9 +25,9 @@ const Speakers: React.FC = () => {
           </IonToolbar>
         </IonHeader>
         {Array.isArray(speakers) && speakers.map((speaker: any) => (
-          <IonItem key={speaker.attributes.id}>
+          <IonItem key={speaker.id}>
             <IonAvatar slot="start">
-              <IonImg key={speaker.attributes.id} src={speaker.attributes.url} alt={speaker.attributes.title} />
+              <IonImg src={speaker.attributes.Headshot.data.attributes.url} alt={speaker.attributes.Headshot.data.attributes.alternativeText} />
             </IonAvatar>
             <IonLabel>{speaker.attributes.Name}</IonLabel>
           </IonItem>
