@@ -13,7 +13,7 @@ import { IonReactRouter } from '@ionic/react-router';
 import { homeSharp, calendarSharp, peopleSharp, pricetagsSharp } from 'ionicons/icons';
 import Home from './pages/Home';
 import Schedule from './pages/Schedule';
-import Speakers from './pages/Speakers';
+import Speakers from './pages/Guests';
 import Vendors from './pages/Vendors';
 
 /* Core CSS required for Ionic components to work properly */
@@ -48,7 +48,7 @@ const App: React.FC = () => (
           <Route exact path="/schedule">
             <Schedule />
           </Route>
-          <Route path="/speakers">
+          <Route path="/guests">
             <Speakers />
           </Route>
           <Route path="/vendors">
@@ -67,9 +67,9 @@ const App: React.FC = () => (
             <IonIcon aria-hidden="true" icon={calendarSharp} />
             <IonLabel>Schedule</IonLabel>
           </IonTabButton>
-          <IonTabButton tab="speakers" href="/speakers">
+          <IonTabButton tab="guests" href="/guests">
             <IonIcon aria-hidden="true" icon={peopleSharp} />
-            <IonLabel>Speakers</IonLabel>
+            <IonLabel>Guests</IonLabel>
           </IonTabButton>
           <IonTabButton tab="vendors" href="/vendors">
             <IonIcon aria-hidden="true" icon={pricetagsSharp} />
