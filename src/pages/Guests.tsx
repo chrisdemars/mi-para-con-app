@@ -18,7 +18,7 @@ const Guests: React.FC = () => {
 
   return (
     <IonPage>
-      <IonContent class="scroll-content">
+      <IonContent fullscreen={true} scrollEvents={true}>
         <IonHeader>
           <IonToolbar>
             <IonTitle size="large">MI ParaCon</IonTitle>

@@ -4,12 +4,11 @@ import { calendar, time, cash, people } from 'ionicons/icons';
 const Home: React.FC = () => {
   return (
     <IonPage>
-      <IonContent fullscreen>
+      <IonContent>
         <IonCard>
           <IonImg alt="Valley Camp with Michigan ParaCon logo on top." src="/hero-image@2x.jpg" ></IonImg>
           <IonCardHeader>
             <IonCardTitle>👻 Welcome</IonCardTitle>
-            {/* <IonCardSubtitle>Michigan ParaCon</IonCardSubtitle> */}
           </IonCardHeader>
           <IonCardContent>The 2024 Michigan Paranormal Convention will bring the biggest names in the paranormal industry to Sault Ste. Marie, MI for the 14th time.</IonCardContent>
           <IonCardContent>
